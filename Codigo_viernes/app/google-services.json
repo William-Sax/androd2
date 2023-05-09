@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243109331930",
+    "project_id": "colegio-viernes21-aeb97",
+    "storage_bucket": "colegio-viernes21-aeb97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243109331930:android:2f335b92840ecfd484f6e3",
+        "android_client_info": {
+          "package_name": "com.example.codigo_viernes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243109331930-gvsejeb5ak57f5e1soimbbh63in5tctf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyf--ekpaTgd4R40B3BcqfMyHmAcaZ2pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243109331930-gvsejeb5ak57f5e1soimbbh63in5tctf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

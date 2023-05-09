@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EstudianteActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#E91E63"
+        android:gravity="center"
+        android:text="ESTUDIANTES"
+        android:textColor="#F3F1F1"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/etcarnet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Carnet"
+        android:inputType="number"
+        android:textColorHint="#E91E63"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textColorHint="#E91E63"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/etcarrera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Carrera"
+        android:inputType="text"
+        android:textColorHint="#E91E63"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/etsemestre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Semestre"
+        android:inputType="number"
+        android:textColorHint="#E91E63"
+        android:textColorLink="#E91E63"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="122dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="#E91E63"
+        android:enabled="false"
+        android:text=" Activo"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnadicionar"
+            android:layout_width="200dp"
+            android:onClick="Adicionar"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:text="Adicionar" />
+
+        <Button
+            android:id="@+id/btnconsultar"
+            android:onClick="Consultar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:text="Concultar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnmodificar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:onClick="Modificar"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btneliminar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="Eliminar"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnanular"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="Anular"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:text="Anular" />
+
+        <Button
+            android:id="@+id/btncancelar"
+            android:layout_width="200dp"
+            android:onClick="Cancelar"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:text="CANCELAR" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnregresar"
+            android:onClick="Regresar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#E91E63"
+            android:text="Regresar" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+</LinearLayout>
