@@ -66,7 +66,7 @@ public class EstudianteActivity extends AppCompatActivity {
             estudiante.put("Activo", "Si");
 
             // Add a new document with a generated ID
-            db.collection("Estudiante")
+            db.collection("Estudiantes")
                     .add(estudiante)
                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                         @Override
@@ -93,7 +93,7 @@ public class EstudianteActivity extends AppCompatActivity {
             jetcarnet.requestFocus();
         }
         else{
-            db.collection("Estudiante")
+            db.collection("Estudiantes")
                     .whereEqualTo("Carnet",carnet)
                     // get se va ir a buscar lo que especificacmos en el where
                     .get()
@@ -153,7 +153,7 @@ public class EstudianteActivity extends AppCompatActivity {
             estudiante.put("Semestre", semestre);
             estudiante.put("Activo", "Si");
             //Modify document
-            db.collection("Estudiante").document(idestudiante)
+            db.collection("Estudiantes").document(idestudiante)
                     .set(estudiante)
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -180,7 +180,7 @@ public class EstudianteActivity extends AppCompatActivity {
     public void Eliminar(View view){
         if (!idestudiante.equals(""))
         {
-            db.collection("Estudiante").document(idestudiante)
+            db.collection("Estudiantes").document(idestudiante)
                     .delete()
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -225,7 +225,7 @@ public class EstudianteActivity extends AppCompatActivity {
                 estudiante.put("Semestre", semestre);
                 estudiante.put("Activo", "No"); // modificar condicionar verificando si esta checkeado o no
                 //Modify document
-                db.collection("Estudiante").document(idestudiante)
+                db.collection("Estudiantes").document(idestudiante)
                         .set(estudiante)
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override

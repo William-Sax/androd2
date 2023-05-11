@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondopantalla"
     tools:context=".EstudianteActivity">
 
     <TextView
@@ -12,10 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="#E91E63"
         android:gravity="center"
         android:text="MATERIAS"
-        android:textColor="#F3F1F1"
+        android:textColor="#ebedee"
         android:textSize="40dp" />
 
     <LinearLayout
@@ -30,11 +30,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginRight="9dp"
+            android:textColorHint="#ebedee"
             android:ems="10"
             android:gravity="center"
             android:hint="Codigo Materias"
             android:inputType="number"
-            android:textColorHint="#8BE91E63"
             android:textSize="25dp" />
 
         <Button
@@ -42,8 +42,11 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="@color/botones"
             android:layout_marginBottom="20dp"
-            android:backgroundTint="#E91E63"
+            android:textColor="#ebedee"
+            app:cornerRadius="15dp"
             android:onClick="Consultar"
             android:text="Consultar" />
     </LinearLayout>
@@ -60,7 +63,7 @@
         android:onClick="Verificacion"
         android:hint="Nombre Materia"
         android:inputType="text"
-        android:textColorHint="#8BE91E63"
+        android:textColorHint="#ebedee"
         android:textSize="25dp" />
 
     <EditText
@@ -74,7 +77,7 @@
         android:hint="Nombre Profesor"
         android:onClick="Verificacion"
         android:inputType="text"
-        android:textColorHint="#8BE91E63"
+        android:textColorHint="#ebedee"
         android:textSize="25dp" />
 
     <EditText
@@ -88,8 +91,8 @@
         android:gravity="center"
         android:hint="Creditos"
         android:inputType="number"
-        android:textColorHint="#8BE91E63"
-        android:textColorLink="#E91E63"
+        android:textColorHint="#ebedee"
+        android:textColorLink="#ebedee"
         android:textSize="25dp" />
 
     <CheckBox
@@ -100,7 +103,7 @@
         android:layout_marginTop="15dp"
         android:enabled="false"
         android:text=" Activo"
-        android:textColor="#8BE91E63"
+        android:textColor="#ebedee"
         android:textSize="20dp" />
 
 
@@ -116,8 +119,10 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="9dp"
             android:onClick="Modificar"
+            app:cornerRadius="15dp"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#ebedee"
+            android:textColor="#111111"
             android:text="Guardar/Editar" />
 
         <Button
@@ -126,7 +131,9 @@
             android:layout_height="wrap_content"
             android:onClick="Eliminar"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            app:cornerRadius="15dp"
+            android:backgroundTint="#ebedee"
+            android:textColor="#111111"
             android:text="Eliminar" />
     </LinearLayout>
 
@@ -138,13 +145,15 @@
 
         <Button
             android:id="@+id/btnanular"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="Anular"
             android:layout_marginRight="9dp"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
-            android:text="Activar/Desactivar" />
+            android:backgroundTint="#ebedee"
+            android:onClick="Anular"
+            android:text="Activar/DESACTIVAR"
+            android:textColor="#111111"
+            app:cornerRadius="15dp" />
 
         <Button
             android:id="@+id/btncancelar"
@@ -152,7 +161,9 @@
             android:onClick="Cancelar"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#ebedee"
+            android:textColor="#111111"
+            app:cornerRadius="15dp"
             android:text="CANCELAR" />
     </LinearLayout>
 
@@ -168,7 +179,9 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#E91E63"
+            android:textColor="#ebedee"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="@color/botones"
             android:text="Regresar" />
     </LinearLayout>
 

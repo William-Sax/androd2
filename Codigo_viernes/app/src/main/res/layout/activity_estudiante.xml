@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondopantalla"
     tools:context=".EstudianteActivity">
 
     <TextView
@@ -12,10 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="#E91E63"
         android:gravity="center"
         android:text="ESTUDIANTES"
-        android:textColor="#F3F1F1"
+        android:textColor="#ebedee"
         android:textSize="40dp" />
 
     <EditText
@@ -27,7 +27,7 @@
         android:gravity="center"
         android:hint="Carnet"
         android:inputType="number"
-        android:textColorHint="#E91E63"
+        android:textColorHint="#ebedee"
         android:textSize="25dp" />
 
     <EditText
@@ -39,7 +39,7 @@
         android:gravity="center"
         android:hint="Nombre"
         android:inputType="text"
-        android:textColorHint="#E91E63"
+        android:textColorHint="#ebedee"
         android:textSize="25dp" />
 
     <EditText
@@ -51,7 +51,7 @@
         android:gravity="center"
         android:hint="Carrera"
         android:inputType="text"
-        android:textColorHint="#E91E63"
+        android:textColorHint="#ebedee"
         android:textSize="25dp" />
 
     <EditText
@@ -63,8 +63,8 @@
         android:gravity="center"
         android:hint="Semestre"
         android:inputType="number"
-        android:textColorHint="#E91E63"
-        android:textColorLink="#E91E63"
+        android:textColorHint="#ebedee"
+        android:textColorLink="#ebedee"
         android:textSize="25dp" />
 
     <CheckBox
@@ -72,10 +72,9 @@
         android:layout_width="122dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:background="#E91E63"
         android:enabled="false"
         android:text=" Activo"
-        android:textColor="#FFFFFF"
+        android:textColor="#ebedee"
         android:textSize="25dp" />
 
 
@@ -88,11 +87,13 @@
         <Button
             android:id="@+id/btnadicionar"
             android:layout_width="200dp"
-            android:onClick="Adicionar"
             android:layout_height="wrap_content"
             android:layout_marginRight="9dp"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
+            android:backgroundTint="#ebedee"
+            android:onClick="Adicionar"
             android:text="Adicionar" />
 
         <Button
@@ -101,7 +102,9 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            app:cornerRadius="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#ebedee"
             android:text="Concultar" />
     </LinearLayout>
 
@@ -116,9 +119,11 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="9dp"
-            android:onClick="Modificar"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            android:textColor="@color/black"
+            android:backgroundTint="#ebedee"
+            app:cornerRadius="15dp"
+            android:onClick="Modificar"
             android:text="Modificar" />
 
         <Button
@@ -126,8 +131,10 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:onClick="Eliminar"
+            android:textColor="@color/black"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            app:cornerRadius="15dp"
+            android:backgroundTint="#ebedee"
             android:text="Eliminar" />
     </LinearLayout>
 
@@ -143,8 +150,10 @@
             android:layout_height="wrap_content"
             android:onClick="Anular"
             android:layout_marginRight="9dp"
+            android:textColor="@color/black"
+            app:cornerRadius="15dp"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            android:backgroundTint="#ebedee"
             android:text="Anular" />
 
         <Button
@@ -153,7 +162,9 @@
             android:onClick="Cancelar"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#E91E63"
+            app:cornerRadius="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#ebedee"
             android:text="CANCELAR" />
     </LinearLayout>
 
@@ -165,11 +176,13 @@
 
         <Button
             android:id="@+id/btnregresar"
-            android:onClick="Regresar"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#E91E63"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="@color/botones"
+            android:textColor="@color/botones"
+            android:onClick="Regresar"
             android:text="Regresar" />
     </LinearLayout>
 
