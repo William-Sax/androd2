@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginRight="9dp"
+            android:backgroundTint="#ebedee"
             android:textColorHint="#ebedee"
             android:ems="10"
             android:gravity="center"
@@ -44,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             style="?attr/materialButtonOutlinedStyle"
+            android:layout_marginEnd="15dp"
             app:strokeColor="@color/botones"
             android:layout_marginBottom="20dp"
             android:textColor="#ebedee"
@@ -61,6 +63,7 @@
         android:ems="10"
         android:enabled="false"
         android:gravity="center"
+        android:backgroundTint="#ebedee"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:onClick="Verificacion"
@@ -77,6 +80,7 @@
         android:ems="10"
         android:enabled="false"
         android:layout_marginStart="15dp"
+        android:backgroundTint="#ebedee"
         android:layout_marginEnd="15dp"
         android:gravity="center"
         android:hint="Nombre Profesor"
@@ -95,6 +99,7 @@
         android:onClick="Verificacion"
         android:gravity="center"
         android:layout_marginStart="15dp"
+        android:backgroundTint="#ebedee"
         android:layout_marginEnd="15dp"
         android:hint="Creditos"
         android:inputType="number"
@@ -118,6 +123,8 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:orientation="horizontal">
 
         <Button
@@ -148,6 +155,8 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:orientation="horizontal">
 
         <Button
