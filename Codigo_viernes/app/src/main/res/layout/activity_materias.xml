@@ -8,15 +8,14 @@
     android:background="@drawable/fondopantalla"
     tools:context=".EstudianteActivity">
 
-    <TextView
-        android:id="@+id/textView3"
+    <ImageView
+        android:id="@+id/imageLibro"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:text="MATERIAS"
-        android:textColor="#ebedee"
-        android:textSize="40dp" />
+        app:srcCompat="@drawable/ic_baseline_menu_book_24" />
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
