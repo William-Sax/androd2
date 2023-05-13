@@ -8,21 +8,19 @@
     android:background="@drawable/fondopantalla"
     tools:context=".EstudianteActivity">
 
-    <TextView
-        android:id="@+id/textView3"
+    <ImageView
+        android:id="@+id/imageLibro"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:text="ESTUDIANTES"
-        android:textColor="#ebedee"
-        android:textSize="40dp" />
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_baseline_perm_contact_calendar_24" />
+
 
     <EditText
         android:id="@+id/etcarnet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:layout_marginStart="15dp"
         android:backgroundTint="#ebedee"
